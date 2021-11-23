@@ -122,26 +122,6 @@ class Employee:
         return 'Klasa opisująca pracownika'
 
 
-class Order:
-    def __init__(self, employee: Employee, student: Student, books, order_date: datetime.date):
-        self.employee = employee
-        self.student = student
-        self.books = books
-        self.order_date = order_date
-
-    def __str__(self):
-        books_info = ""
-        for book in self.books:
-            books_info += "\n"+book.__str__()
-
-        return f'Dane zamówienia:\n{self.employee.__str__()}.\n{self.student.__str__()}. \nZamówione ksiązki: {books_info}'\
-               f'\nData zamówienia {self.order_date.strftime("%d-%m-%Y")}.'
-
-    @staticmethod
-    def class_info():
-        return 'Klasa opisująca zamówienie'
-
-
 class Book:
     def __init__(self, title, library: Library, publication_date: datetime.date, author_name, author_surname, number_of_pages: int):
         self.title = title
@@ -159,6 +139,26 @@ class Book:
     @staticmethod
     def class_info():
         return 'Klasa opisująca książkę'
+
+
+class Order:
+    def __init__(self, employee: Employee, student: Student, books: [Book], order_date: datetime.date):
+        self.employee = employee
+        self.student = student
+        self.books = books
+        self.order_date = order_date
+
+    def __str__(self):
+        books_info = ""
+        for book in self.books:
+            books_info += "\n"+book.__str__()
+
+        return f'Dane zamówienia:\n{self.employee.__str__()}.\n{self.student.__str__()}. \nZamówione ksiązki: {books_info}'\
+               f'\nData zamówienia {self.order_date.strftime("%d-%m-%Y")}.'
+
+    @staticmethod
+    def class_info():
+        return 'Klasa opisująca zamówienie'
 
 
 first_library = Library('Katowice', 'ul. Wodospady', '40-556', '7-17', '100200300')
