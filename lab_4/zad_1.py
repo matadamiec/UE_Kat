@@ -11,11 +11,6 @@ class Student:
         self.name = name
         self.marks = marks
 
-
-
-
-
-
     def compute_marks(self) -> bool:
         if self.marks > 50:
             return True
