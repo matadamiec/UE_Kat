@@ -1,4 +1,4 @@
 from magazine import Product
 
-print(Product.product_utils.utils_info())
 print(Product.import_info())
+print(Product.utils_import_state)

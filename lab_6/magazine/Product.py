@@ -2,4 +2,7 @@ import magazine.utils as product_utils
 
 
 def import_info():
-    return "W skrypcie product zaimportowano utils"
+    return "Zaimportowano Product."
+
+
+utils_import_state = product_utils.utils_info()

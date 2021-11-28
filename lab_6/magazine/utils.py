@@ -1,2 +1,2 @@
 def utils_info():
-    return "Jeżeli to widzisz, to znaczy, że zaimportowałes utils.py"
+    return "Jeżeli to widzisz, to znaczy, że masz dostęp utils.py"
