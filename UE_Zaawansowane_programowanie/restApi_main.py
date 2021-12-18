@@ -20,6 +20,11 @@ app = Flask(__name__)
 api = Api(app)
 
 
+class WelcomePageApi(Resource):
+    def get(self):
+        return {'MAD Api Welcome Page'}
+
+
 class MoviesApi(Resource):
     def get(self):
         return {'movies': get_movies_dict(make_movies_list(load_csv.make_json("rest_api/data_source/movies.csv")))}
@@ -40,6 +45,7 @@ class TagsApi(Resource):
         return {'tags': get_tags_dict(make_tags_list(load_csv.make_json("rest_api/data_source/tags.csv")))}
 
 
+api.add_resource(WelcomePageApi, '/')
 api.add_resource(MoviesApi, '/movies')
 api.add_resource(LinksApi, '/links')
 api.add_resource(RatingsApi, '/ratings')
