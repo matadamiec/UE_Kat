@@ -1,1 +1,1 @@
-web: gunicorn restApi_main.py
+web: gunicorn UE_Zaawansowane_programowanie:restApi_main.py
