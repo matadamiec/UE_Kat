@@ -22,7 +22,7 @@ api = Api(app)
 
 class WelcomePageApi(Resource):
     def get(self):
-        return {'MAD Api Welcome Page'}
+        return {'welcome:': 'MAD Api Welcome Page'}
 
 
 class MoviesApi(Resource):
