@@ -27,22 +27,22 @@ class WelcomePageApi(Resource):
 
 class MoviesApi(Resource):
     def get(self):
-        return {'movies': get_movies_dict(make_movies_list(load_csv.make_json("data_source/movies.csv")))}
+        return {'movies': get_movies_dict(make_movies_list(load_csv.make_json("rest_api/data_source/movies.csv")))}
 
 
 class LinksApi(Resource):
     def get(self):
-        return {'links': get_links_dict(make_links_list(load_csv.make_json("data_source/links.csv")))}
+        return {'links': get_links_dict(make_links_list(load_csv.make_json("rest_api/data_source/links.csv")))}
 
 
 class RatingsApi(Resource):
     def get(self):
-        return {'ratings': get_ratings_dict(make_ratings_list(load_csv.make_json("data_source/ratings.csv")))}
+        return {'ratings': get_ratings_dict(make_ratings_list(load_csv.make_json("rest_api/data_source/ratings.csv")))}
 
 
 class TagsApi(Resource):
     def get(self):
-        return {'tags': get_tags_dict(make_tags_list(load_csv.make_json("data_source/tags.csv")))}
+        return {'tags': get_tags_dict(make_tags_list(load_csv.make_json("rest_api/data_source/tags.csv")))}
 
 
 api.add_resource(WelcomePageApi, '/')
