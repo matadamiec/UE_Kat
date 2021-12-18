@@ -38,3 +38,6 @@ class Warehouse:
     @staticmethod
     def class_info():
         return 'Klasa opisująca magazyn'
+
+
+# print(Warehouse("MAG_1", "Testowa 01 Katowice", "1000m2", "15 miejsc", 125.85).__str__())

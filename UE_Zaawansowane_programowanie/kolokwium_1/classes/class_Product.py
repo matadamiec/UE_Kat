@@ -1,8 +1,8 @@
-import class_Warehouse
+from kolokwium_1.classes.class_Warehouse import Warehouse
 
 
 class Product:
-    def __init__(self, product_id: str, name: str, price: float, weight: float, measurements: str, storage: class_Warehouse.Warehouse):
+    def __init__(self, product_id: str, name: str, price: float, weight: float, measurements: str, storage: Warehouse):
         self.product_id = product_id
         self.name = name
         self.price = price
@@ -42,3 +42,7 @@ class Product:
     @staticmethod
     def class_info():
         return 'Klasa opisująca produkt'
+
+
+# product1 = Product("01", "Produkt_1", 25.99, 100, "10x20x30", {})
+# print(product1.__str__())

@@ -60,4 +60,4 @@ class Order:
         return f'Dane zamówienia:\nNumer zamówienia: {self._order_id}\nData zamówienia: {str(self._order_date)}' \
                f'\nZamówione produkty: {self.list_product()}' \
                f'\nKlient detaliczny: {self._retail_client.__str__()}\nKlient biznesowy: {self._business_client.__str__()}' \
-            f'\nWartość zamówienia: {str(self.calculate_sum_price())}'
+               f'\nWartość zamówienia: {str(self.calculate_sum_price())}'
