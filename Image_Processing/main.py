@@ -1,6 +1,6 @@
 import cv2
 import pytesseract as pytesseract
-from PIL import Image, ImageEnhance, ImageFilter
+from PIL import Image
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
