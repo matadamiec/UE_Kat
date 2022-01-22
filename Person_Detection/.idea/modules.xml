@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Image_Processing/.idea/Image_Processing.iml" filepath="$PROJECT_DIR$/../Image_Processing/.idea/Image_Processing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../K1/.idea/K1.iml" filepath="$PROJECT_DIR$/../K1/.idea/K1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Kolokwium_1/.idea/Kolokwium_1.iml" filepath="$PROJECT_DIR$/../Kolokwium_1/.idea/Kolokwium_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Kolokwium_2/.idea/Kolokwium_2.iml" filepath="$PROJECT_DIR$/../Kolokwium_2/.idea/Kolokwium_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lab_2/.idea/Lab_2.iml" filepath="$PROJECT_DIR$/../Lab_2/.idea/Lab_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lab_3/.idea/Lab_3.iml" filepath="$PROJECT_DIR$/../Lab_3/.idea/Lab_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lab_4/.idea/Lab_4.iml" filepath="$PROJECT_DIR$/../Lab_4/.idea/Lab_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lab_6/.idea/Lab_6.iml" filepath="$PROJECT_DIR$/../Lab_6/.idea/Lab_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Person_Detection.iml" filepath="$PROJECT_DIR$/.idea/Person_Detection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Rest_API/.idea/Rest_API.iml" filepath="$PROJECT_DIR$/../Rest_API/.idea/Rest_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UE_Zaawansowane_programowanie/.idea/UE_Zaawansowane_programowanie.iml" filepath="$PROJECT_DIR$/../UE_Zaawansowane_programowanie/.idea/UE_Zaawansowane_programowanie.iml" />
+    </modules>
+  </component>
+</project>
