@@ -1,3 +1,5 @@
+import glob
+
 from datetime import datetime
 
 import numpy as np
@@ -11,8 +13,7 @@ labelsColor = (0, 255, 0)
 
 configPrototxt = 'Config_files\MobileNetSSD_deploy.prototxt'
 configCaffemodel = 'Config_files\MobileNetSSD_deploy.caffemodel'
-imagesToProcess = ['Samples\sample1.jpeg', 'Samples\sample2.jpeg', 'Samples\sample3.jpeg', 'Samples\sample4.jpeg']
-
+imagesToProcess = glob.glob('Samples/*.jpeg')
 requiredConfidence = 0.4
 
 # DNN - Deep Neural Network
