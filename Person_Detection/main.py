@@ -27,7 +27,7 @@ for imgToProcess in imagesToProcess:
 
     net.setInput(blob)
     detections = net.forward()
-
+    personCount = 0
     for i in np.arange(0, detections.shape[2]):
         confidence = detections[0, 0, i, 2]
         if confidence > requiredConfidence:
@@ -36,6 +36,7 @@ for imgToProcess in imagesToProcess:
             (startX, startY, endX, endY) = box.astype("int")
 
             if classNames[detection_index] == 'person':
+                personCount += 1
                 label = classNames[detection_index] + " " + str(round(confidence * 100, 2)) + "%"
                 print("Wykryto obiekt " + label)
                 cv2.rectangle(image, (startX, startY), (endX, endY), labelsColor, 2)
@@ -47,5 +48,6 @@ for imgToProcess in imagesToProcess:
     processingSeconds = (processingEnd - processingStart)
 
     print("Czas przetwarzania: " + str(round(processingSeconds.total_seconds(), 3)) + "s")
+    print("Liczba znalezionych obiektów: "+str(personCount))
     cv2.imshow(imgToProcess, image)
     cv2.waitKey(0)
